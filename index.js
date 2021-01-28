@@ -2,7 +2,7 @@ let screen = document.getElementById('screen');
 buttons = document.querySelectorAll('button');
 let screenValue = '';
 for (item of buttons) {
-    item.addEventListener('click', (e) => {
+    item.addEventListener('click', (e) => { //e for event
         buttonText = e.target.innerText;
         console.log('Button text is ', buttonText);
         if (buttonText == 'X') {
